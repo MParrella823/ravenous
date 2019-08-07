@@ -4,6 +4,7 @@
 // This className will handle how a 'Business' component will be formatted and styled
 
 import React from 'react';
+import './Business.css';
 
 
 let business = {
@@ -18,7 +19,7 @@ let business = {
   reviewCount: 90
 }
 
-className Business extends React.Component {
+class Business extends React.Component {
     render() {
         return <div className="Business">
         <div className="image-container">
@@ -34,10 +35,13 @@ className Business extends React.Component {
           <div className="Business-reviews">
             <h3>{business.category}</h3>
             <h3 className="rating">{business.rating}</h3>
-            <p>{reviewCount} reviews</p>
+            <p>{business.reviewCount} reviews</p>
           </div>
         </div>
-      </div>
+      </div>;
     }
 
 }
+
+export default Business;
+
