@@ -1,7 +1,7 @@
 // Business.js
 // Created by Matt Parrella on 8/6/2019
 //
-// This className will handle how a 'Business' component will be formatted and styled
+// This class will handle how a 'Business' component will be formatted and styled
 
 import React from 'react';
 import './Business.css';
@@ -21,20 +21,20 @@ let business = {
 
 class Business extends React.Component {
     render() {
-        return <div className="Business">
-        <div className="image-container">
+        return <div class="Business">
+        <div class="image-container">
           <img src='https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg' alt=''/>
         </div>
         <h2>{business.name}</h2>
-        <div className="Business-information">
-          <div className="Business-address">
+        <div class="Business-information">
+          <div class="Business-address">
             <p>{business.address}</p>
             <p>{business.city}</p>
             <p>{business.state} {business.zipCode}</p>
           </div>
-          <div className="Business-reviews">
+          <div class="Business-reviews">
             <h3>{business.category}</h3>
-            <h3 className="rating">{business.rating}</h3>
+            <h3 class="rating">{business.rating}</h3>
             <p>{business.reviewCount} reviews</p>
           </div>
         </div>
