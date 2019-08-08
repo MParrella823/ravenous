@@ -7,14 +7,10 @@ import SearchBar from '../SearchBar/SearchBar';
 
 function App() {
   return (
-    <div class="App">
-      <header class="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Kayt is hot!
-        </p>
-        <SearchBar />
-      </header>
+    <div className="app">
+      <h1>ravenous</h1>
+      <SearchBar></SearchBar>
+      <BusinessList />    
     </div>
   );
 }
